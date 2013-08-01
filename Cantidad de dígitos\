@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main(void)
+{
+  int numero,i;
+
+
+
+printf("determina digitos introducidos \n");
+  printf("Introduzca un numero entero: \n");
+	scanf("%d",&numero);
+
+i=0;
+	while(numero>0)
+	{
+
+		numero=(numero/10);
+		i=i+1;
+	}
+	printf("numeros de digitos introducidos %d\n",i);
+
+	getch();
+}
+Calculo de velocidad
+// num.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+
+ 
+void main()
+{
+    int velocidad, distancia, tiempo;
+
+  printf("\n**========INGRESE LOS DATOS========**\n\t");
+	printf("\nINGRESE LA DISTANCIA:\n\t");
+	scanf("%d", &distancia);
+	printf("\nINGRESE EL TIEMPO:\n\t");
+	scanf("%d", &tiempo);
+if (distancia>0 && tiempo>0)
+{
+	velocidad=distancia/tiempo;
+	printf("\nLA VELOCIDAD ES:\n\t%d", velocidad);
+}
+else
+{
+	printf("ERROR POR FAVOR INGRESE VALOR POSITIVOS Y MAYORES A CERO....!!!");
+}
+    
+	getch();
+}
